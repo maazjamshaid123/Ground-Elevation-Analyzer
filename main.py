@@ -10,23 +10,15 @@ st.set_page_config(page_title = 'GROUND ELEVATION VISUALIZER', layout='wide')
 st.write('By Maaz Jamshaid')
 st.title('UAV SMALL SCALE RAW DATA GROUND ELEVATION ANALYZER')
 
-
 test = st.button('Use Sample File ')
 own_file = st.button('Upload Your Own File')
-if test:
-    st.subheader('DEFAULT COLORMAP: VIRIDIS ')
-    st.subheader('CHOOSE COLORMAP:')
-    mode1 = st.button('JET')
-    mode2 = st.button('SEISMIC')
-    mode3 = st.button('PuOr')
 
-    cmap = None
-    if mode1:
-        cmap = 'jet'
-    elif mode2:
-        cmap = 'seismic'
-    elif mode3:
-        cmap = 'PuOr'
+if test:
+    st.subheader('DEFAULT COLORMAP: JET ')
+    st.subheader('CHOOSE COLORMAP:')
+
+    cmap = 'jet'
+
 
     st.markdown('---')
     excel_data_df = pd.read_excel('flight_data.xlsx')
