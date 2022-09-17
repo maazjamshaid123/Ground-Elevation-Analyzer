@@ -7,7 +7,7 @@ from scipy import interpolate
 # from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 
 st.set_page_config(page_title = 'GROUND ELEVATION VISUALIZER', layout='wide')
-st.write('By Maaz Jamshaid')
+# st.write('By Maaz Jamshaid')
 st.title('UAV SMALL SCALE RAW DATA GROUND ELEVATION ANALYZER')
 
 test = st.button('Use Sample File ')
