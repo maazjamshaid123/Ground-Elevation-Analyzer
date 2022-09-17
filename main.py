@@ -15,7 +15,6 @@ own_file = st.button('Upload Your Own File')
 
 if test:
     st.subheader('DEFAULT COLORMAP: JET ')
-    st.subheader('CHOOSE COLORMAP:')
 
     cmap = 'jet'
 
