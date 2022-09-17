@@ -6,7 +6,7 @@ import pandas as pd
 from scipy import interpolate
 
 st.set_page_config(page_title = 'GROUND ELEVATION VISUALIZER', layout='wide')
-st.write('Maaz Jamshaid')
+st.write('By Maaz Jamshaid')
 st.title('SMALL SCALE UAV RAW DATA GROUND ELEVATION ANALYZER')
 st.subheader('Choose an EXCEL file')
 upload=st.file_uploader('EXCEL FILE: Use x,y,z for Latitude, Longitude, Altitude',type='xlsx')
